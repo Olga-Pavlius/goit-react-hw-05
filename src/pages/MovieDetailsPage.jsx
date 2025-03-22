@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 import { useParams, useLocation } from "react-router-dom"
 import { fetchDetails } from "../TMBDService"
 import { Link, NavLink } from "react-router-dom";
-import css from "./MovieDetailsPage.module.css"
+import css from "./movieDetailsPage.module.css"
 import clsx from "clsx";
 
 const getLinkStyle = ({ isActive }) => {
@@ -73,11 +73,11 @@ export default function MovieDetails() {
         <ul>
           <li>
                     <NavLink  className={getLinkStyle} to={`/movies/${movieId}/cast`}>Cast</NavLink>
-          </li>
+           </li>
             <li>
                     <NavLink className={getLinkStyle} to={`/movies/${movieId}/reviews`}>Reviews</NavLink>
             </li>
-           </ul>
+            </ul>
               <Outlet />
         </>
         
