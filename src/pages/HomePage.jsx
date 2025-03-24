@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MovieList from "../components/MovieList"; // Імпортуємо компонент MovieList
+import MovieList from "../components/MovieList/MovieList"; // Імпортуємо компонент MovieList
 
 const API_KEY = "ef6d329598f7cc3b012e8ec0f6829446"; 
 const API_URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
